@@ -24,8 +24,8 @@ int p(int x){
 int main(){
   int i, lb, ub;
 
-  lb = 100001;
-  ub = 0;
+  lb = 0;               //ぜったいp(lb)=0になる初期値
+  ub = 100001;          //ぜったいp(lb)=1になる初期値
   scanf("%d%d", &n, &k);
   for(i = 0; i < n; i++){
     scanf("%d", &A[i]);
