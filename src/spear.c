@@ -11,7 +11,6 @@ int p(int x){
     j+=A[i]/x;        //ながさA[i]の棒からながさxのやりが採れます
     i++;
   }
-  printf("j = %d (x=%d)\n", j, x);
   if(j>=k) return 0;   //結局k本採れたのか?
   return 1;            //とれなかった...
 }
@@ -34,7 +33,6 @@ int main(){
       lb = m;
     }
   }
-  printf("lb:%d\nub:%d\n", lb, ub);
   printf("%d\n", lb);
   return 0;
 }
