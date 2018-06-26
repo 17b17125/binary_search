@@ -16,8 +16,8 @@ int main(){
   for(i = 0; i < n; i++){
     scanf("%d", &A[i]);
   }
-  lb = 0;                   //ぜったいp(lb)=0になる初期値
-  ub = n;                 //ぜったいp(ub)=1になる初期値
+  lb = -1;                  //ぜったいp(lb)=0になる初期値
+  ub = n;                   //ぜったいp(ub)=1になる初期値
   while(ub - lb > 1){
     int m = (lb + ub) / 2;
     if(p(m)){
